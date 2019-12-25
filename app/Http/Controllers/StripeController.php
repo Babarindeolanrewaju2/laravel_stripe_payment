@@ -14,7 +14,7 @@ class StripeController extends Controller
  *
  * @return Response
  */
-    public function stripe()
+    public function index()
     {
         return view('stripe');
     }
@@ -24,7 +24,7 @@ class StripeController extends Controller
  *
  * @return Response
  */
-    public function payStripe(Request $request)
+    public function store(Request $request)
     {
         $this->validate($request, [
             'card_no' => 'required',

@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('stripe', 'StripeController@index');
 Route::post('store', 'StripeController@store');
+
